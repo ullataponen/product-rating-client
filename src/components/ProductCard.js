@@ -73,20 +73,7 @@ const ProductCard = (product) => {
   };
 
   const getRating = async () => {
-    if (product.product.rating) {
-      rating = product.product.rating;
-    }
-    // else {
-    //   let productUrl = product.product._links.self.href;
-    //   let id = productUrl.substring(
-    //     productUrl.lastIndexOf("/") + 1,
-    //     productUrl.length
-    //   );
-    //   await axios
-    //     .get(`${ratingBaseUrl}${id}`)
-    //     .then((response) => (rating = response.data.rating));
-    // }
-    for (let i = 0; i < rating; i++) {
+    for (let i = 0; i < product.product.rating; i++) {
       starArr.push(<StarOutlinedIcon key={i} style={{ color: orange[500] }} />);
     }
   };
