@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# K Group Developer Trainee assignment: front-end for product rating micro service
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is part of a home assignment for K Group's Developer Trainee program application. It is a single-page React application that fetches the data from 2 microservice REST API's.
 
-## Available Scripts
+## What does it do?
 
-In the project directory, you can run:
+This project is the front-end for a micro service that lists user's rated products. The user may view their own rated products (tab "Home") and also all products (tab "Products").
 
-### `yarn start`
+The front-end fetches data from the following REST API's:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Product-catalog-service: a list of user's rated products and their ratings
+- Product-info-service: a list of all products (product name and manufacturer)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The products and their data are shown in product cards. In development phase, the product images are replaced by placeholder images from the [Unsplash Random](https://source.unsplash.com/) image service.
 
-### `yarn test`
+## How does it work?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project repo may be downloaded and copied to local environment. Before use, libraries must be installed with `npm install` command in the project directory.
 
-### `yarn build`
+Project has been deployed to Heroku and may be found here: [https://product-rating-client.herokuapp.com/](https://product-rating-client.herokuapp.com/).
+At this point, the deployed version does not work without running the backend in local environment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The back-end repositories for the micro service are found as follows:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Discovery server: [https://github.com/ullataponen/discovery-server](https://github.com/ullataponen/discovery-server)
+- Product catalog service: [https://github.com/ullataponen/product-catalog-service](https://github.com/ullataponen/product-catalog-service)
+- Product info service: [https://github.com/ullataponen/product-info-service](https://github.com/ullataponen/product-info-service)
+- Ratings data service: [https://github.com/ullataponen/ratings-data-service](https://github.com/ullataponen/ratings-data-service)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In order to run the front-end, all 4 back-end services must be copied to local environment and their Spring Boot Application files be run in a code editor/IDE.
 
-### `yarn eject`
+## Who will use this project?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The project is a home assignment for K Group's Developer Trainee 2021 program application and it may be used by K Group for evaluation purposes. The creator and repository owner may use the skills learned during this project in future projects.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## What is the goal of this project?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This project's purpose is to show the skill level of the creator and the ability to create a micro service.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Used technologies (front-end only)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React
+- JavaScript
+- HTML (JSX)
+- CSS (Material UI)
