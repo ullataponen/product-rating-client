@@ -1,6 +1,6 @@
-# K Group Developer Trainee assignment: front-end for product rating micro service
+# Front-end for product rating micro service
 
-This project is part of a home assignment for K Group's Developer Trainee program application. It is a single-page React application that fetches the data from 2 microservice REST API's.
+This project is part of a micro service that provides user's product rating information. It is a single-page React application that fetches the data from 2 microservice REST API's.
 
 ## What does it do?
 
@@ -31,7 +31,7 @@ In order to run the front-end, all 4 back-end services must be copied to local e
 
 ## Who will use this project?
 
-The project is a home assignment for K Group's Developer Trainee 2021 program application and it may be used by K Group for evaluation purposes. The creator and repository owner may use the skills learned during this project in future projects.
+Anyone can copy the repository for their own, non-commercial purposes. The creator and repository owner may use the skills learned during this project in future projects.
 
 ## What is the goal of this project?
 
